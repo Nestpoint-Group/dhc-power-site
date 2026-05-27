@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technology — DHC Power | Niobium-Lithium Cells</title>
+<meta name="description" content="DHC Power pairs niobium-based anode chemistry with lithium cells — for fast charge, wide-temperature operation, safety, and long cycle life.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============================== NAV ============================== -->
+<header class="nav" id="nav">
+  <div class="nav__bar">
+    <a href="index.html" class="nav__logo" aria-label="DHC Power home">
+      <img src="assets/img/logo-on-dark.svg" alt="DHC Power">
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="product.html" class="nav__link">Product</a>
+      <a href="technology.html" class="nav__link">Technology</a>
+      <a href="company.html" class="nav__link">Company</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </nav>
+    <a href="contact.html" class="nav__cta">Request Brief</a>
+    <button class="nav__menu-toggle" aria-label="Open menu" aria-expanded="false" id="navToggle">Menu</button>
+  </div>
+</header>
+
+<!-- ============================== PAGE HEAD ============================== -->
+<section class="page-head">
+  <div class="page-head__bg"></div>
+  <div class="page-head__grid"></div>
+  <div class="container">
+    <div class="page-head__inner">
+      <div class="breadcrumbs"><a href="index.html">HOME</a> <span>/</span> TECHNOLOGY</div>
+      <h1 class="page-head__title">Niobium, meet lithium.</h1>
+      <p class="page-head__lede">DHC Power pairs niobium-based anode chemistry with lithium cells. The result is a battery that charges fast, runs across extreme temperatures, and stays safe — exactly where conventional lithium-ion struggles.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== § 01 PRINCIPLE ============================== -->
+<section class="section" id="principle">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <div class="section-num"><strong>§ 01</strong> &nbsp;/&nbsp; PRINCIPLE</div>
+        <h2 style="margin-top: 24px; text-transform: uppercase;">Why niobium.</h2>
+      </div>
+      <p class="sec-head__lead">Conventional graphite anodes plate lithium when pushed hard or run cold — the root cause of slow charging, degradation, and thermal risk. Niobium-oxide anodes intercalate lithium differently.</p>
+    </div>
+
+    <div class="grid grid-2" data-reveal style="gap: 48px; align-items: stretch;">
+      <!-- Schematic -->
+      <div class="diagram">
+        <span class="diagram__crn"></span>
+        <span class="diagram__label diagram__label--tl">FIG 1 / CHARGE — Li⁺ INTERCALATION</span>
+        <span class="diagram__label diagram__label--br">SCHEMATIC · NOT TO SCALE</span>
+        <svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:560px;">
+          <defs>
+            <marker id="ion" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="#828B82"/>
+            </marker>
+          </defs>
+
+          <!-- current collectors (outer foils) -->
+          <g stroke="#828B82" stroke-width="1" fill="none">
+            <rect x="96" y="90" width="14" height="240"/>
+            <rect x="650" y="90" width="14" height="240"/>
+          </g>
+
+          <!-- anode block (niobium oxide) -->
+          <g>
+            <rect x="120" y="90" width="150" height="240" fill="rgba(247,253,247,0.05)" stroke="#F7FDF7" stroke-width="1.2"/>
+            <!-- lattice hatch -->
+            <g stroke="rgba(247,253,247,0.16)" stroke-width="0.6">
+              <line x1="135" y1="90" x2="135" y2="330"/>
+              <line x1="165" y1="90" x2="165" y2="330"/>
+              <line x1="195" y1="90" x2="195" y2="330"/>
+              <line x1="225" y1="90" x2="225" y2="330"/>
+              <line x1="255" y1="90" x2="255" y2="330"/>
+            </g>
+          </g>
+
+          <!-- cathode block (lithium metal oxide) -->
+          <g>
+            <rect x="490" y="90" width="150" height="240" fill="rgba(247,253,247,0.05)" stroke="#F7FDF7" stroke-width="1.2"/>
+            <g stroke="rgba(247,253,247,0.16)" stroke-width="0.6">
+              <line x1="505" y1="90" x2="505" y2="330"/>
+              <line x1="535" y1="90" x2="535" y2="330"/>
+              <line x1="565" y1="90" x2="565" y2="330"/>
+              <line x1="595" y1="90" x2="595" y2="330"/>
+              <line x1="625" y1="90" x2="625" y2="330"/>
+            </g>
+          </g>
+
+          <!-- separator (center) -->
+          <rect x="365" y="90" width="30" height="240" fill="none" stroke="#828B82" stroke-width="1" stroke-dasharray="3 4"/>
+
+          <!-- Li+ ions moving left (toward anode) during charge -->
+          <g stroke="#828B82" stroke-width="0.8" fill="none">
+            <line x1="470" y1="150" x2="300" y2="150" marker-end="url(#ion)"/>
+            <line x1="470" y1="210" x2="300" y2="210" marker-end="url(#ion)"/>
+            <line x1="470" y1="270" x2="300" y2="270" marker-end="url(#ion)"/>
+          </g>
+          <g fill="#F7FDF7">
+            <circle cx="430" cy="150" r="4"/><circle cx="350" cy="150" r="4"/>
+            <circle cx="430" cy="210" r="4"/><circle cx="350" cy="210" r="4"/>
+            <circle cx="430" cy="270" r="4"/><circle cx="350" cy="270" r="4"/>
+          </g>
+
+          <!-- labels -->
+          <g font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" letter-spacing="1.2">
+            <text x="195" y="360" text-anchor="middle" fill="#F7FDF7">Nb-OXIDE ANODE</text>
+            <text x="380" y="360" text-anchor="middle" fill="#828B82">SEPARATOR</text>
+            <text x="565" y="360" text-anchor="middle" fill="#F7FDF7">LiMO₂ CATHODE</text>
+            <text x="103" y="78" text-anchor="middle" fill="#828B82" font-size="9">(−) Cu</text>
+            <text x="657" y="78" text-anchor="middle" fill="#828B82" font-size="9">(+) Al</text>
+          </g>
+          <g font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" letter-spacing="1.4">
+            <text x="380" y="50" text-anchor="middle" fill="#F7FDF7">Li⁺ — FAST, PLATING-FREE</text>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Narrative -->
+      <div style="display:flex; flex-direction:column; justify-content:center;">
+        <h3 style="margin-bottom: 20px;">An anode that doesn't fight physics.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Niobium-oxide structures host lithium ions across a wide voltage window without plating metallic lithium on the surface.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. That single property cascades into fast charging, cold-temperature operation, and a dramatically safer failure mode.</p>
+        <div class="row" style="margin-top: 16px;">
+          <a href="#performance" class="link-arrow">See the performance</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider-x">
+
+<!-- ============================== § 02 ADVANTAGES ============================== -->
+<section class="section" id="advantages">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <div class="section-num"><strong>§ 02</strong> &nbsp;/&nbsp; ADVANTAGES</div>
+        <h2 style="margin-top: 24px; text-transform: uppercase;">What the chemistry unlocks.</h2>
+      </div>
+      <p class="sec-head__lead">Four properties that conventional lithium-ion can't deliver together — and that matter most in the field.</p>
+    </div>
+
+    <div class="grid grid-4" data-reveal>
+      <article class="cap-card">
+        <div class="cap-card__num">01 / SPEED</div>
+        <h3 class="cap-card__title">Fast charge, even cold.</h3>
+        <p class="cap-card__desc">Accept high charge currents without plating — including at sub-zero temperatures that force conventional cells to crawl.</p>
+        <div class="cap-card__meta"><span>TARGET</span><strong>0–80% / 15 MIN</strong></div>
+      </article>
+      <article class="cap-card">
+        <div class="cap-card__num">02 / RANGE</div>
+        <h3 class="cap-card__title">Wide temperature window.</h3>
+        <p class="cap-card__desc">Stable intercalation across a broad thermal envelope, from deep cold to high heat, with minimal derating.</p>
+        <div class="cap-card__meta"><span>ENVELOPE</span><strong>−40 / +85 °C</strong></div>
+      </article>
+      <article class="cap-card">
+        <div class="cap-card__num">03 / SAFETY</div>
+        <h3 class="cap-card__title">No plating, safer failure.</h3>
+        <p class="cap-card__desc">Eliminating lithium plating removes a primary trigger for thermal runaway — a fundamentally safer cell.</p>
+        <div class="cap-card__meta"><span>ABUSE</span><strong>NAIL · CRUSH</strong></div>
+      </article>
+      <article class="cap-card">
+        <div class="cap-card__num">04 / LIFE</div>
+        <h3 class="cap-card__title">Thousands of cycles.</h3>
+        <p class="cap-card__desc">Low mechanical strain during cycling translates to long calendar and cycle life under demanding duty.</p>
+        <div class="cap-card__meta"><span>RATED</span><strong>3,000+ CYCLES</strong></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<hr class="divider-x">
+
+<!-- ============================== § 03 PERFORMANCE ============================== -->
+<section class="section" id="performance">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <div class="section-num"><strong>§ 03</strong> &nbsp;/&nbsp; PERFORMANCE</div>
+        <h2 style="margin-top: 24px; text-transform: uppercase;">Where niobium-lithium pulls ahead.</h2>
+      </div>
+      <p class="sec-head__lead">Directional comparison against conventional graphite-anode lithium-ion. Figures are development targets, not final qualified specifications.</p>
+    </div>
+
+    <div class="grid grid-2" data-reveal style="gap: 64px; margin-bottom: 64px;">
+      <div>
+        <div class="bar" style="--fill: 90%;">
+          <div class="bar__row"><span>LOW-TEMP CHARGE ACCEPTANCE</span><strong>vs ~20%</strong></div>
+          <div class="bar__track"><div class="bar__fill"></div></div>
+        </div>
+        <div class="bar" style="--fill: 85%;">
+          <div class="bar__row"><span>FAST-CHARGE RATE</span><strong>4–6C</strong></div>
+          <div class="bar__track"><div class="bar__fill"></div></div>
+        </div>
+        <div class="bar" style="--fill: 95%;">
+          <div class="bar__row"><span>THERMAL SAFETY MARGIN</span><strong>HIGH</strong></div>
+          <div class="bar__track"><div class="bar__fill"></div></div>
+        </div>
+        <div class="bar" style="--fill: 88%;">
+          <div class="bar__row"><span>CYCLE LIFE</span><strong>3,000+</strong></div>
+          <div class="bar__track"><div class="bar__fill"></div></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="stat">
+          <div class="stat__value">15<sup>min</sup></div>
+          <div class="stat__label">Target 0–80% charge at full operating temperature</div>
+        </div>
+        <div class="stat">
+          <div class="stat__value">−40<sup>°C</sup></div>
+          <div class="stat__label">Continuous operation floor</div>
+        </div>
+        <div class="stat">
+          <div class="stat__value">3,000<sup>cycles</sup></div>
+          <div class="stat__label">Rated cycle life under demanding duty</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comparison table -->
+    <div data-reveal>
+      <table class="spec-table">
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th><span class="spec-table__col-dhc">DHC Niobium-Li</span></th>
+            <th>Conventional Li-ion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Charge at −20 °C</th>
+            <td class="is-dhc">Full rate</td>
+            <td>Severely limited</td>
+          </tr>
+          <tr>
+            <th>Fast-charge rate</th>
+            <td class="is-dhc">4–6C</td>
+            <td>1–3C</td>
+          </tr>
+          <tr>
+            <th>Lithium plating risk</th>
+            <td class="is-dhc">Eliminated</td>
+            <td>Present</td>
+          </tr>
+          <tr>
+            <th>Operating range</th>
+            <td class="is-dhc">−40 / +85 °C</td>
+            <td>0 / +45 °C typical</td>
+          </tr>
+          <tr>
+            <th>Cycle life</th>
+            <td class="is-dhc">3,000+</td>
+            <td>500–1,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<hr class="divider-x">
+
+<!-- ============================== § 04 APPLICATIONS ============================== -->
+<section class="section" id="applications">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <div class="section-num"><strong>§ 04</strong> &nbsp;/&nbsp; APPLICATIONS</div>
+        <h2 style="margin-top: 24px; text-transform: uppercase;">Where it deploys.</h2>
+      </div>
+      <p class="sec-head__lead">The properties that define niobium-lithium are the properties these environments demand. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="grid grid-4" data-reveal>
+      <div class="app-tile">
+        <div class="app-tile__hover"></div>
+        <div class="app-tile__head"><span>ENV / 01</span><strong>−40°C</strong></div>
+        <h3 class="app-tile__title">Sub-Arctic Surveillance</h3>
+        <p class="app-tile__desc">Sustained operation in unheated enclosures across multi-week deployments.</p>
+        <span class="app-tile__cta">Defense &amp; ISR</span>
+      </div>
+      <div class="app-tile">
+        <div class="app-tile__hover"></div>
+        <div class="app-tile__head"><span>ENV / 02</span><strong>15 MIN</strong></div>
+        <h3 class="app-tile__title">Tactical UAV Swarm</h3>
+        <p class="app-tile__desc">Field fast-charge in any operational climate to maximize sorties per day.</p>
+        <span class="app-tile__cta">Aerospace</span>
+      </div>
+      <div class="app-tile">
+        <div class="app-tile__hover"></div>
+        <div class="app-tile__head"><span>ENV / 03</span><strong>18 KM</strong></div>
+        <h3 class="app-tile__title">High-Altitude Platforms</h3>
+        <p class="app-tile__desc">Low pressure, deep thermal cycling, and radiation tolerance at the edge of space.</p>
+        <span class="app-tile__cta">Stratospheric</span>
+      </div>
+      <div class="app-tile">
+        <div class="app-tile__hover"></div>
+        <div class="app-tile__head"><span>ENV / 04</span><strong>IP69K</strong></div>
+        <h3 class="app-tile__title">Maritime &amp; Subsea</h3>
+        <p class="app-tile__desc">Sealed modules for autonomous undersea and surface vessels.</p>
+        <span class="app-tile__cta">Naval</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CTA ============================== -->
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta-block">
+      <div class="cta-block__bg"></div>
+      <div class="cta-block__inner">
+        <div>
+          <div class="section-num"><strong>§ 05</strong> &nbsp;/&nbsp; ENGAGEMENT</div>
+          <h2 class="cta-block__title" style="margin-top:16px;">Want the technical detail?</h2>
+          <p class="cta-block__desc">We share deeper performance data and chemistry detail under NDA with qualified programs and partners. Start with a one-page brief.</p>
+        </div>
+        <div class="row" style="gap: 12px;">
+          <a href="contact.html" class="btn btn--lg">Request brief</a>
+          <a href="company.html" class="btn btn--ghost btn--lg">About DHC</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="foot">
+  <div class="container">
+    <div class="foot__top">
+      <div class="foot__brand">
+        <img class="foot__brand-logo" src="assets/img/logo-on-dark.svg" alt="DHC Power">
+        <p class="foot__brand-text">Battery systems engineered for defense, aerospace, and the world's most demanding environments. Designed and built in the United States.</p>
+      </div>
+      <div class="foot__col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="technology.html">Technology</a></li>
+          <li><a href="company.html">Company</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot__col">
+        <h5>Technology</h5>
+        <ul>
+          <li><a href="technology.html">Niobium platform</a></li>
+          <li><a href="technology.html#applications">Applications</a></li>
+          <li><a href="technology.html#performance">Performance</a></li>
+          <li><a href="contact.html">Request a brief</a></li>
+        </ul>
+      </div>
+      <div class="foot__col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Compliance</a></li>
+          <li><a href="design-system.html">Design system</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__bottom">
+      <span>© 2026 DHC POWER, INC. · ALL RIGHTS RESERVED</span>
+      <span><a href="#">PRIVACY</a> &nbsp;·&nbsp; <a href="#">TERMS</a> &nbsp;·&nbsp; <a href="#">ITAR NOTICE</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
