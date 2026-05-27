@@ -1317,6 +1317,86 @@ section { position: relative; }
 }
 .type-spec__meta strong { color: var(--text); display: block; margin-bottom: 4px; }
 
+/* Horizontal-scroll wrapper for wide tables on small screens */
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+/* ============================================================
+   RESPONSIVE — tablet & mobile refinements
+   ============================================================ */
+
+/* ---------- Tablet: keep dense grids 2-up instead of jumping to 1 ---------- */
+@media (min-width: 601px) and (max-width: 900px) {
+  .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .hero__inner { grid-template-columns: 1fr; gap: 48px; }
+}
+
+/* ---------- Mobile (≤ 600px) ---------- */
+@media (max-width: 600px) {
+  :root { --gutter: 20px; }
+
+  body { font-size: 15px; }
+
+  /* Hero: shed the cockpit furniture, tighten spacing */
+  .hero { min-height: auto; padding: 64px 0 56px; }
+  .hero__inner { gap: 36px; }
+  .hero__corners { display: none; }
+  .hero__operator-label { display: none; }
+  .hero__grid { background-size: 56px 56px; }
+  .hero__title { font-size: clamp(2.5rem, 12vw, 3.5rem); margin-bottom: 24px; }
+  .hero__lede { font-size: 1rem; margin-bottom: 32px; }
+  .hero__cta-row { gap: 12px; }
+  .hero__cta-row .btn { flex: 1 1 100%; justify-content: center; }
+  .cell-vis { margin: 0 auto; max-width: 460px; }
+
+  /* Nav */
+  .nav__bar { padding: 14px var(--gutter); gap: 16px; }
+  .nav__logo { height: 24px; }
+
+  /* Page headers */
+  .page-head { padding: 88px 0 48px; }
+  .page-head__title { margin-bottom: 18px; }
+  .page-head__lede { font-size: 1rem; }
+
+  /* Section rhythm */
+  .section { padding: 56px 0; }
+  .section--tight { padding: 40px 0; }
+  .sec-head { margin-bottom: 36px; gap: 16px; }
+  .grid { gap: 16px; }
+
+  /* Cards a touch tighter */
+  .card, .cap-card { padding: 28px 24px; }
+  .cap-card { min-height: 0; }
+  .cell-card__body, .cell-card__vis { padding: 28px 24px; }
+
+  /* Full-width tap targets for stacked CTA rows */
+  .cta-block { margin: 48px 0; }
+  .cta-block__inner .row { width: 100%; }
+  .cta-block__inner .row .btn,
+  .construction__row .btn { flex: 1 1 100%; justify-content: center; }
+  .construction__row { width: 100%; }
+
+  /* Tables: prevent crush; allow horizontal scroll, tighten header tracking */
+  .spec-table { min-width: 460px; }
+  .spec-table thead th { letter-spacing: 0.06em; }
+
+  /* Stats slightly smaller so units don't wrap awkwardly */
+  .stat__value { font-size: clamp(2.25rem, 11vw, 3rem); }
+
+  /* Footer */
+  .foot { padding: 56px 0 28px; }
+  .foot__top { gap: 28px; margin-bottom: 40px; }
+  .foot__bottom { flex-direction: column; align-items: flex-start; gap: 10px; }
+
+  /* Ticker a touch smaller */
+  .ticker__inner { gap: 32px; font-size: 0.66rem; }
+}
+
+/* ---------- Very small (≤ 380px) ---------- */
+@media (max-width: 380px) {
+  .hero__title { font-size: 2.25rem; }
+  .page-head__title { font-size: 2rem; }
+}
+
 /* ---------- Team / leadership card ---------- */
 .team-card {
   background: var(--bg-panel);
