@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — DHC Power</title>
+<meta name="description" content="Request a technical brief or open an investor / partner conversation with DHC Power.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============================== NAV ============================== -->
+<header class="nav" id="nav">
+  <div class="nav__bar">
+    <a href="index.html" class="nav__logo" aria-label="DHC Power home">
+      <img src="assets/img/logo-on-dark.svg" alt="DHC Power">
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="product.html" class="nav__link">Product</a>
+      <a href="technology.html" class="nav__link">Technology</a>
+      <a href="company.html" class="nav__link">Company</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </nav>
+    <a href="contact.html" class="nav__cta">Request Brief</a>
+    <button class="nav__menu-toggle" aria-label="Open menu" aria-expanded="false" id="navToggle">Menu</button>
+  </div>
+</header>
+
+<!-- ============================== PAGE HEAD ============================== -->
+<section class="page-head">
+  <div class="page-head__bg"></div>
+  <div class="page-head__grid"></div>
+  <div class="container">
+    <div class="page-head__inner">
+      <div class="breadcrumbs"><a href="index.html">HOME</a> <span>/</span> CONTACT</div>
+      <h1 class="page-head__title">Start a conversation.</h1>
+      <p class="page-head__lede">Whether you're evaluating cells for a program or exploring an investment, tell us what you need. We respond to qualified inquiries within two business days.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CONTACT BODY ============================== -->
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2" style="gap: 64px; align-items: start;">
+
+      <!-- Left: paths + details -->
+      <div data-reveal>
+        <div class="section-num"><strong>§ 01</strong> &nbsp;/&nbsp; TWO WAYS IN</div>
+
+        <div style="margin-top: 32px; display:flex; flex-direction:column; gap: 24px;">
+          <div class="cap-card" style="min-height:auto;">
+            <div class="cap-card__num">01 / PROGRAMS</div>
+            <h3 class="cap-card__title" style="font-size:1.375rem;">Request a technical brief</h3>
+            <p class="cap-card__desc" style="margin-bottom:0;">For defense, aerospace, and OEM teams evaluating niobium-lithium cells. We'll share performance detail and form-factor options under NDA.</p>
+          </div>
+          <div class="cap-card" style="min-height:auto;">
+            <div class="cap-card__num">02 / INVESTORS &amp; PARTNERS</div>
+            <h3 class="cap-card__title" style="font-size:1.375rem;">Investor &amp; partner inquiry</h3>
+            <p class="cap-card__desc" style="margin-bottom:0;">For investors and strategic partners. Reach out for our company overview and current focus.</p>
+          </div>
+        </div>
+
+        <!-- Direct details -->
+        <div style="margin-top: 40px; border-top:1px solid var(--line); padding-top: 32px;">
+          <div class="mono" style="margin-bottom: 16px;">DIRECT</div>
+          <div style="font-family: var(--font-mono); font-size: 0.85rem; line-height: 2; color: var(--text-mid); letter-spacing: 0.04em;">
+            <div><span style="color:var(--text-dim);">EMAIL &nbsp;</span> contact@dhcpower.com</div>
+            <div><span style="color:var(--text-dim);">PRESS &nbsp;</span> press@dhcpower.com</div>
+            <div><span style="color:var(--text-dim);">LOC &nbsp;&nbsp;&nbsp;</span> United States</div>
+          </div>
+          <p class="mono" style="margin-top: 24px; color: var(--text-faint); line-height: 1.8; letter-spacing: 0.1em;">
+            ITAR NOTICE — Certain technical data is export-controlled. Do not transmit controlled information through this form.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div data-reveal>
+        <div class="card" style="padding: 40px;">
+          <div class="section-num" style="margin-bottom: 28px;"><strong>§ 02</strong> &nbsp;/&nbsp; SEND A MESSAGE</div>
+          <form class="form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="intent">Inquiry type</label>
+              <select id="intent" name="intent">
+                <option>Technical brief — program / OEM</option>
+                <option>Investor inquiry</option>
+                <option>Partnership</option>
+                <option>Press</option>
+                <option>Careers</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form__row">
+              <div class="field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" autocomplete="name" placeholder="Jane Doe">
+              </div>
+              <div class="field">
+                <label for="org">Organization</label>
+                <input type="text" id="org" name="org" autocomplete="organization" placeholder="Organization">
+              </div>
+            </div>
+            <div class="field">
+              <label for="email">Work email</label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="jane@org.com">
+            </div>
+            <div class="field">
+              <label for="message">What do you need?</label>
+              <textarea id="message" name="message" placeholder="Tell us about your program, timeline, or interest…"></textarea>
+            </div>
+            <button type="submit" class="btn btn--lg" style="width:100%; justify-content:center;">Send message</button>
+            <p class="mono" id="formNote" style="color: var(--text-faint); text-align:center; margin:0;">Prototype form — not yet wired to a backend.</p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="foot">
+  <div class="container">
+    <div class="foot__top">
+      <div class="foot__brand">
+        <img class="foot__brand-logo" src="assets/img/logo-on-dark.svg" alt="DHC Power">
+        <p class="foot__brand-text">Battery systems engineered for defense, aerospace, and the world's most demanding environments. Designed and built in the United States.</p>
+      </div>
+      <div class="foot__col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="technology.html">Technology</a></li>
+          <li><a href="company.html">Company</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot__col">
+        <h5>Technology</h5>
+        <ul>
+          <li><a href="technology.html">Niobium platform</a></li>
+          <li><a href="technology.html#applications">Applications</a></li>
+          <li><a href="technology.html#performance">Performance</a></li>
+          <li><a href="contact.html">Request a brief</a></li>
+        </ul>
+      </div>
+      <div class="foot__col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Compliance</a></li>
+          <li><a href="design-system.html">Design system</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__bottom">
+      <span>© 2026 DHC POWER, INC. · ALL RIGHTS RESERVED</span>
+      <span><a href="#">PRIVACY</a> &nbsp;·&nbsp; <a href="#">TERMS</a> &nbsp;·&nbsp; <a href="#">ITAR NOTICE</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+  // Prototype-only: prevent actual submission, show a confirmation note.
+  document.getElementById('contactForm')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const note = document.getElementById('formNote');
+    if (note) { note.textContent = 'Thanks — this is a prototype; no message was sent.'; note.style.color = 'var(--accent)'; }
+  });
+</script>
+</body>
+</html>
