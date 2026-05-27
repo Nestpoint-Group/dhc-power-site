@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System — DHC Power</title>
+<meta name="description" content="DHC Power design system — colors, typography, and components reference.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============================== NAV ============================== -->
+<header class="nav" id="nav">
+  <div class="nav__bar">
+    <a href="index.html" class="nav__logo" aria-label="DHC Power home">
+      <img src="assets/img/logo-on-dark.svg" alt="DHC Power">
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="product.html" class="nav__link">Product</a>
+      <a href="technology.html" class="nav__link">Technology</a>
+      <a href="company.html" class="nav__link">Company</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </nav>
+    <a href="contact.html" class="nav__cta">Request Brief</a>
+    <button class="nav__menu-toggle" aria-label="Open menu" aria-expanded="false" id="navToggle">Menu</button>
+  </div>
+</header>
+
+<!-- ============================== PAGE HEAD ============================== -->
+<section class="page-head">
+  <div class="page-head__bg"></div>
+  <div class="page-head__grid"></div>
+  <div class="container">
+    <div class="page-head__inner">
+      <div class="breadcrumbs"><a href="index.html">HOME</a> <span>/</span> DESIGN SYSTEM</div>
+      <h1 class="page-head__title">Design System</h1>
+      <p class="page-head__lede">The visual companion to <strong>docs/DESIGN_SYSTEM.md</strong>. Tactical / defense-tech: charcoal and off-white do the work; brand green is a scalpel.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== THE GREEN RULE ============================== -->
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta-block" style="margin: 0;">
+      <div class="cta-block__inner" style="grid-template-columns: 1fr;">
+        <div>
+          <div class="section-num"><strong>§ 00</strong> &nbsp;/&nbsp; THE GREEN RULE</div>
+          <h2 style="margin: 16px 0; text-transform: uppercase;">Green ≤ ~5–8% of any page.</h2>
+          <p style="max-width: 720px;">Brand green (<strong>#56DB56</strong>) is permitted <strong>only</strong> on: primary CTA buttons, status / live indicator dots, link hover + underline states, and form focus borders. Never on stat values, headings, eyebrows, card hovers, corner brackets, or large fills. When in doubt, don't use green.</p>
+          <div class="row" style="gap: 12px; margin-top: 8px;">
+            <span class="pill">Status dot OK</span>
+            <a href="#" class="btn btn--sm">CTA OK</a>
+            <a href="#" class="link-arrow">Link hover OK</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== COLORS ============================== -->
+<section class="section section--tight" id="colors">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <div class="section-num"><strong>§ 01</strong> &nbsp;/&nbsp; COLOR</div>
+        <h2 style="margin-top: 24px; text-transform: uppercase;">Palette &amp; tokens.</h2>
+      </div>
+      <p class="sec-head__lead">Five brand colors, extended into a working set of surface, line, and text tokens.</p>
+    </div>
+
+    <div class="mono" style="margin-bottom: 16px;">BRAND</div>
+    <div class="grid grid-4" style="margin-bottom: 48px;">
+      <div class="swatch"><div class="swatch__color" style="background:#272B27;"></div><div class="swatch__body"><div class="swatch__name">Charcoal</div><div class="swatch__hex">#272B27</div></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#56DB56;"></div><div class="swatch__body"><div class="swatch__name">Green</div><div class="swatch__hex">#56DB56</div></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#2AA82A;"></div><div class="swatch__body"><div class="swatch__name">Deep Green</div><div class="swatch__hex">#2AA82A</div></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#B0EFB0;"></div><div class="swatch__body"><div class="swatch__name">Mint</div><div class="swatch__hex">#B0EFB0</div></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#F7FDF7;"></div><div class="swatch__body"><div class="swatch__name">Off-White</div><div class="swatch__hex">#F7FDF7</div></div></div>
+    </div>
+
+    <div class="mono" style="margin-bottom: 16px;">SURFACES</div>
+    <div class="grid grid-4" style="margin-bottom: 48px;">
+      <div class="swatch"><div class="swatch__color" style="background:#0A0C0A;"></div><div class="swatch__body"><div class="swatch__name">bg-void</div><div class="swatch__hex">#0A0C0A</div></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#131513;"></div><div class="swatch__body"><div class="swatch__name">bg-tint</div><div class="swatch__hex">#131513</div></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#1B1E1B;"></div><div class="swatch__body"><div class="swatch__name">bg-panel</div><div class="swatch__hex">#1B1E1B</div></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#232723;"></div><div class="swatch__body"><div class="swatch__name">bg-elev</div><div class="swatch__hex">#232723</div></div></div>
+    </div>
+
+    <div class="mono" style="margin-bottom: 16px;">TEXT &amp; LINES</div>
+    <div class="grid grid-4">
+      <div class="swatch"><div class="swatch__color" style="background:#F7FDF7;"></div><div class="swatch__body"><div class="swatch__name">text</div><div class="swatch__hex">#F7FDF7</div></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#C8D2C8;"></div><div class="swatch__body"><div class="swatch__name">text-mid</div><div class="swatch__hex">#C8D2C8</div></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#828B82;"></div><div class="swatch__body"><div class="swatch__name">text-dim</div><div class="swatch__hex">#828B82</div></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#4F564F;"></div><div class="swatch__body"><div class="swatch__name">text-faint / line</div><div class="swatch__hex">#4F564F</div></div></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider-x">
+
+<!-- ============================== TYPOGRAPHY ============================== -->
+<section class="section section--tight" id="type">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <div class="section-num"><strong>§ 02</strong> &nbsp;/&nbsp; TYPE</div>
+        <h2 style="margin-top: 24px; text-transform: uppercase;">Typography.</h2>
+      </div>
+      <p class="sec-head__lead">Space Grotesk for display, Inter for body, JetBrains Mono for labels and specs.</p>
+    </div>
+
+    <div class="type-spec">
+      <div class="type-spec__meta"><strong>Display / H1</strong>Space Grotesk 600<br>clamp 2.5–5.75rem</div>
+      <div><span style="font-family:var(--font-display); font-weight:600; font-size:clamp(2.5rem,6vw,4.5rem); letter-spacing:-0.035em; line-height:1;">Edge of possible</span></div>
+    </div>
+    <div class="type-spec">
+      <div class="type-spec__meta"><strong>Heading / H2</strong>Space Grotesk 600<br>clamp 2–3.5rem</div>
+      <div><span style="font-family:var(--font-display); font-weight:600; font-size:clamp(1.6rem,3vw,2.5rem); letter-spacing:-0.03em;">Engineered for the worst day</span></div>
+    </div>
+    <div class="type-spec">
+      <div class="type-spec__meta"><strong>Body</strong>Inter 400<br>16px / 1.55</div>
+      <div><p style="margin:0; max-width:520px;">High-density battery systems built for defense, aerospace, and the world's hardest environments. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+    </div>
+    <div class="type-spec">
+      <div class="type-spec__meta"><strong>Mono label</strong>JetBrains Mono 500<br>0.7rem · 0.18em</div>
+      <div><span class="mono">CELL TEMP −40°C · CHARGE 98% · STATUS NOMINAL</span></div>
+    </div>
+    <div class="type-spec">
+      <div class="type-spec__meta"><strong>Eyebrow</strong>mono · 0.22em</div>
+      <div><span class="eyebrow">DHC Power — Energy Systems</span></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider-x">
+
+<!-- ============================== COMPONENTS ============================== -->
+<section class="section section--tight" id="components">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <div class="section-num"><strong>§ 03</strong> &nbsp;/&nbsp; COMPONENTS</div>
+        <h2 style="margin-top: 24px; text-transform: uppercase;">Component samples.</h2>
+      </div>
+      <p class="sec-head__lead">Live instances of the core building blocks used across the site.</p>
+    </div>
+
+    <div class="mono" style="margin-bottom: 16px;">BUTTONS</div>
+    <div class="row" style="gap: 12px; margin-bottom: 48px;">
+      <a href="#" class="btn">Primary</a>
+      <a href="#" class="btn btn--ghost">Ghost</a>
+      <a href="#" class="btn btn--outline">Outline</a>
+      <a href="#" class="btn btn--sm">Small</a>
+      <a href="#" class="link-arrow">Inline link</a>
+    </div>
+
+    <div class="mono" style="margin-bottom: 16px;">TAGS &amp; PILLS</div>
+    <div class="row" style="gap: 12px; margin-bottom: 48px;">
+      <span class="pill">Operational</span>
+      <span class="tag">MIL-STD-810</span>
+      <span class="tag tag--accent">UN 38.3</span>
+    </div>
+
+    <div class="mono" style="margin-bottom: 16px;">CARDS &amp; BARS</div>
+    <div class="grid grid-2" style="gap: 24px;">
+      <article class="cap-card">
+        <div class="cap-card__num">01 / SAMPLE</div>
+        <h3 class="cap-card__title">Capability card</h3>
+        <p class="cap-card__desc">Corner-bracketed card with a numbered eyebrow and a meta footer row.</p>
+        <div class="cap-card__meta"><span>RATED</span><strong>−40 / +85 °C</strong></div>
+      </article>
+      <div style="display:flex; flex-direction:column; justify-content:center;">
+        <div class="bar is-visible" style="--fill: 92%;">
+          <div class="bar__row"><span>CAPACITY RETENTION</span><strong>92%</strong></div>
+          <div class="bar__track"><div class="bar__fill"></div></div>
+        </div>
+        <div class="bar is-visible" style="--fill: 78%;">
+          <div class="bar__row"><span>FAST-CHARGE ACCEPTANCE</span><strong>1.0C</strong></div>
+          <div class="bar__track"><div class="bar__fill"></div></div>
+        </div>
+        <div class="stat">
+          <div class="stat__value">290<sup>Wh/kg</sup></div>
+          <div class="stat__label">Stat sample</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="foot">
+  <div class="container">
+    <div class="foot__top">
+      <div class="foot__brand">
+        <img class="foot__brand-logo" src="assets/img/logo-on-dark.svg" alt="DHC Power">
+        <p class="foot__brand-text">Battery systems engineered for defense, aerospace, and the world's most demanding environments. Designed and built in the United States.</p>
+      </div>
+      <div class="foot__col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="technology.html">Technology</a></li>
+          <li><a href="company.html">Company</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot__col">
+        <h5>Technology</h5>
+        <ul>
+          <li><a href="technology.html">Niobium platform</a></li>
+          <li><a href="technology.html#applications">Applications</a></li>
+          <li><a href="technology.html#performance">Performance</a></li>
+          <li><a href="contact.html">Request a brief</a></li>
+        </ul>
+      </div>
+      <div class="foot__col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Compliance</a></li>
+          <li><a href="design-system.html">Design system</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__bottom">
+      <span>© 2026 DHC POWER, INC. · ALL RIGHTS RESERVED</span>
+      <span><a href="#">PRIVACY</a> &nbsp;·&nbsp; <a href="#">TERMS</a> &nbsp;·&nbsp; <a href="#">ITAR NOTICE</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
